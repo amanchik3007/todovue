@@ -1,18 +1,17 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld :msg="msg"/>
-    <input type="text" v-model="msg">
+    <todo :msg="msg"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import todo from './components/todo.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    todo
   },
   data() {
     return {
